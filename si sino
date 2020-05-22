@@ -1,0 +1,30 @@
+
+
+package plano.cartesiano;
+
+import java.util.Scanner;
+
+
+
+public class PlanoCartesiano {
+   
+    public static void main(String[] args) {
+    int x,y;
+    
+    Scanner entrada = new Scanner(System.in);
+    
+    System.out.print("Digite la coordenada de x: ");
+    x=entrada.nextInt();
+    System.out.print("Digite la coordenada de y: ");
+    y=entrada.nextInt();
+    
+    if(x>0 && y>0){
+        System.out.println("Esta en el Primer Cuadrante");
+    }else if(x<0 && y>0){
+         System.out.println("Esta en el Segundo Cuadrante");
+    }else if(x<0 && y<0){
+         System.out.println("Esta en el tercer Cuadrante");
+    }else if(x>0 && y<0){
+         System.out.println("Esta en el Cuarto Cuadrante");
+    }  
+  }
